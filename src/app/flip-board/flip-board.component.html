@@ -1,0 +1,12 @@
+<section>
+
+<app-flip-card (click)="update(pony)" [flipped]="pony.flipped" [width]="'100px'" [height]="'100px'" *ngFor="let pony of ponys | async;trackBy:trackByFn">
+  <div class="card-front">
+    <img src="/assets/{{pony.image}}" alt="">
+  </div>
+  <div class="card-back">
+  </div>
+</app-flip-card>
+
+<button (click)="reset()"></button>
+</section>

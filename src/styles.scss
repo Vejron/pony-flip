@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/normalize.css/normalize.css';
+@import '../node_modules/blueprint-css/dist/blueprint.css';
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+button {
+    background:#008FEF;
+    color:white;
+    padding: 1.2em;
+    width:300px;
+    text-align:center;
+    font-size:1.2em;
+    margin-bottom: 30px;
+    cursor:pointer;
+}
+
+#fixed-header {
+    //background-color: ;
+    height: 50px;
+}
+
+#fluid-main {
+    //background-color: blue;
+    height: 600px;
+    height: -webkit-calc(100vh - 200px);
+    height: calc(100vh - 200px);
+    padding: 1em;
+}
+
+#fixed-footer {
+    //background-color: red;
+    height: 50px;
+}

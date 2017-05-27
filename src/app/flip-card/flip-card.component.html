@@ -1,0 +1,10 @@
+<div [style.height]="height" [style.width]="width" class="container" [ngClass]="{'shake': _shake}">
+  <div class="card" [class.flipped]="flipped">
+    <div class="front">
+      <ng-content select=".card-front"></ng-content>
+    </div>
+    <div class="back">
+      <ng-content select=".card-back"></ng-content>
+    </div>
+  </div>
+</div>
