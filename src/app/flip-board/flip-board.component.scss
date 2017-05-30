@@ -6,6 +6,12 @@ section {
   justify-content: center;
 }
 
+button {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
 app-flip-card {
   margin: 8px;
 }

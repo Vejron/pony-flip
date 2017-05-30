@@ -10,8 +10,9 @@ export class FlipCardComponent implements OnInit {
   @Input() width = '100px';
   @Input() height = '100px';
   @Input() flipped;
+  @Input() done;
 
-  private _shake = '';
+   _shake = '';
   //flipped = false;
   private _rotation = 0;
 
@@ -19,11 +20,11 @@ export class FlipCardComponent implements OnInit {
 
   ngOnInit() {
     //this.frontChallenge = this.challenge.equation;
-    console.log('created');
+
   }
 
   ngOnChanges(changeRecord) {
-    console.log(changeRecord);
+    //console.log(changeRecord);
     //if(changeRecord.challenge) {
     //  this.flipp();
     //}

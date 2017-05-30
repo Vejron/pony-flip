@@ -35,6 +35,10 @@
 .card.flipped {
   transform: rotateY( 180deg );
 }
+.card.done {
+  transform: rotateX(-5deg) rotateZ(5deg);
+  filter: grayscale(100%);
+}
 
 .shake {
   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;

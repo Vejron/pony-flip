@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
-import { AngularFireAuth } from 'angularfire2/auth';
-import * as firebase from 'firebase/app';
-import {Observable} from 'rxjs/Observable';
+//import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+//import { AngularFireAuth } from 'angularfire2/auth';
+//import * as firebase from 'firebase/app';
+//import {Observable} from 'rxjs/Observable';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ import {Observable} from 'rxjs/Observable';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  user: Observable<firebase.User>;
+  /*user: Observable<firebase.User>;
   items: FirebaseListObservable<any[]>;
   msgVal: string = '';
 
@@ -40,5 +40,5 @@ export class AppComponent {
     //this.items.update()
     this.items.push({ message: desc });
     this.msgVal = '';
-  }
+  }*/
 }

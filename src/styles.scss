@@ -10,17 +10,6 @@ body {
     margin: 0;
 }
 
-button {
-    background:#008FEF;
-    color:white;
-    padding: 1.2em;
-    width:300px;
-    text-align:center;
-    font-size:1.2em;
-    margin-bottom: 30px;
-    cursor:pointer;
-}
-
 #fixed-header {
     //background-color: ;
     height: 50px;
@@ -29,8 +18,7 @@ button {
 #fluid-main {
     //background-color: blue;
     height: 600px;
-    height: -webkit-calc(100vh - 200px);
-    height: calc(100vh - 200px);
+    height: calc(100vh - 100px);
     padding: 1em;
 }
 
