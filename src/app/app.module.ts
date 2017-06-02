@@ -21,12 +21,14 @@ export const firebaseConfig = {
 import { AppComponent } from './app.component';
 import { FlipCardComponent } from './flip-card/flip-card.component';
 import { FlipBoardComponent } from './flip-board/flip-board.component';
+import { GameDoneComponent } from './game-done/game-done.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FlipCardComponent,
-    FlipBoardComponent
+    FlipBoardComponent,
+    GameDoneComponent
   ],
   imports: [
     BrowserModule,

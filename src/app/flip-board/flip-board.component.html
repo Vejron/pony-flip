@@ -1,12 +1,14 @@
 <section>
 
-<app-flip-card (click)="clicked(pony)" [done]="pony.done" [flipped]="pony.flipped" [width]="'100px'" [height]="'100px'" *ngFor="let pony of ponys | async;trackBy:trackByFn">
+<app-flip-card (click)="clicked(pony)" [done]="pony.done" [flipped]="pony.flipped" [width]="'100px'" [height]="'100px'" *ngFor="let pony of ponys ;trackBy:trackByFn">
   <div class="card-front">
     <img src="{{pony.image}}" alt="">
   </div>
   <div class="card-back">
   </div>
 </app-flip-card>
-
+<p>{{stats | json}}</p>
 <button (click)="reset()">Shuffle</button>
 </section>
+
+<app-game-done [done]="stats.done"></app-game-done>
