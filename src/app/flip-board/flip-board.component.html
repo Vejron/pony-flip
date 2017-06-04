@@ -7,8 +7,7 @@
   <div class="card-back">
   </div>
 </app-flip-card>
-<p>{{stats | json}}</p>
 <button (click)="reset()">Shuffle</button>
 </section>
 
-<app-game-done [done]="stats.done"></app-game-done>
+<app-game-done [done]="stats.done" [count]="stats.count" (start)="reset()"></app-game-done>

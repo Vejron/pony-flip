@@ -82,8 +82,10 @@ export class FlipBoardComponent implements OnInit {
   }
 
   reset() {
-    this.stats$.set({ done: false, count: 0 });
-    this.ponys$.remove();
+    this.ponys$.remove().then(() => {
+      this.stats$.set({ done: false, count: 0 });
+    });
+
     this.http
       .get('assets/ponys.json')
       .map((res: Response) => res.json())

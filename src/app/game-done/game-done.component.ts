@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-game-done',
@@ -7,6 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class GameDoneComponent implements OnInit {
   @Input() done;
+  @Input() count;
+  @Output() start = new EventEmitter<any>();
 
   constructor() { }
 

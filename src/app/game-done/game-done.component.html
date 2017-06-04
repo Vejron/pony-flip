@@ -1,5 +1,8 @@
 <section [class.show]="done">
-  <h1>Great work player</h1>
-  <h2>Wanna try again?</h2>
-  <button>GO!</button>
+  <div class="fader"></div>
+  <div class="banner">
+    <h1>Great work player(s)</h1>
+    <h3>You nailed it in {{count}} taps</h3>
+    <button (click)="start.emit()">Wanna try again?</button>
+  </div>
 </section>
